@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
+import prompt
 from random import randint
 
 
 def main():
+    print('Welcome to the Brain Games!')  # ceremony
+    name = prompt.string('May I have your name?: ')
+    print(f'Hello, {name}')
+    # begin game
     print('Answer "yes" if the number is even, otherwise answer "no".')
     counter_for_mistakes = 0
     counter_for_correct_answer = 0

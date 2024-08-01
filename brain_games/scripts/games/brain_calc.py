@@ -1,9 +1,14 @@
+#!/usr/bin/env python3
+import prompt
 from random import randint
 
 
 def main():
-
-    print('What is the result of the expression?')  # begin game
+    print('Welcome to the Brain Games!')  # ceremony
+    name = prompt.string('May I have your name?: ')
+    print(f'Hello, {name}')
+    # begin game
+    print('What is the result of the expression?')
     counter_for_mistakes = 0
     counter_for_correct_answer = 0
 
@@ -23,7 +28,7 @@ def main():
             else:
                 print(f"'{user_answer}' is wrong answer ;(. "
                       f"Correct answer was '{correct_answer}'")
-                print("Let's try again, NAME!")
+                print("Let's try again, {name}!")
                 counter_for_mistakes += 1
 
         elif choice_operations == 2:  # for -
@@ -40,7 +45,7 @@ def main():
             else:
                 print(f"'{user_answer}' is wrong answer ;(. "
                       f"Correct answer was '{correct_answer}'")
-                print("Let's try again, NAME!")
+                print("Let's try again, {name}!")
                 counter_for_mistakes += 1
 
         elif choice_operations == 3:  # for *
@@ -56,8 +61,8 @@ def main():
             else:
                 print(f"'{user_answer}' is wrong answer ;(. "
                       f"Correct answer was '{correct_answer}'")
-                print("Let's try again, NAME!")
+                print("Let's try again, {name}!")
                 counter_for_mistakes += 1
 
         if counter_for_correct_answer == 3:
-            print('Congratulations, NAME')
+            print('Congratulations, {name}')
