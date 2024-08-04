@@ -1,9 +1,13 @@
+#!/usr/bin/env python3
 from random import randint
 
-print('Welcome to the Brain Games!')  # ceremony
-print('May I have your name?: ', end='')
-user_name = input()
-print(f'Hello, {user_name}!')
+
+def welcome_user():
+    print('Welcome to the Brain Games!')  # ceremony
+    print('May I have your name?: ', end='')
+    global user_name
+    user_name = input()
+    print(f'Hello, {user_name}!')
 
 
 def progression_back():
@@ -28,13 +32,13 @@ def progression_front():
     # Create 2 counters
     counter_for_mistakes = 0
     counter_for_correct_answer = 0
+    print('What number is missing in the progression?')
 
     while counter_for_mistakes != 3 and counter_for_correct_answer != 3:
         # Get 2 files from back
         correct_answer, question = progression_back()
 
         # User contact
-        print('What number is missing in the progression?')
         print('Question: ', end='')
         print(*question)
 
@@ -56,4 +60,5 @@ def progression_front():
 
 
 if __name__ == '__main__':
+    welcome_user()
     progression_front()
