@@ -1,4 +1,5 @@
-from brain_games.scripts.games.engine_even import welcome_user, even_front
+from brain_games.scripts.games.welcome_user import welcome_user
+from brain_games.scripts.games.engine_even import even_front
 
 
 def main():
