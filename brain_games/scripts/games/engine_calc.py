@@ -45,7 +45,7 @@ def calc_front():
         result = calc_back()
         print(result)
         print('Your answer: ', end='')
-        user_answer = int(input())
+        user_answer = input()
 
         # check answer using module
         check_answer()
