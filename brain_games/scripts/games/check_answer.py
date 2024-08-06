@@ -10,7 +10,7 @@ def check_answer(user_answer, correct_answer,
         print('Correct!')
     else:
         counter_for_mistakes += 1
-        print(f'{user_answer} is wrong answer ;(.'
-              f'Correct answer was {correct_answer}.',
-              f"Let's try again, {user_name}", sep='\n')
+        print(f"'{user_answer}' is wrong answer ;(. "
+              f"Correct answer was '{correct_answer}'.",
+              f"Let's try again, {user_name}!", sep='\n')
     return counter_for_correct_answer, counter_for_mistakes
