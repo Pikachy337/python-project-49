@@ -7,7 +7,7 @@ def check_answer(user_answer, correct_answer,
 
     if user_answer == str(correct_answer):
         counter_for_correct_answer += 1
-        print('Correct')
+        print('Correct!')
     else:
         counter_for_mistakes += 1
         print(f'{user_answer} is wrong answer ;(.'

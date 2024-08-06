@@ -50,7 +50,7 @@ def calc_front():
                                               counter_for_mistakes)
 
         if counter_for_correct_answer == 3:
-            print(f'Congratulations, {user_name}')
+            print(f'Congratulations, {user_name}!')
 
 
 if __name__ == '__main__':
