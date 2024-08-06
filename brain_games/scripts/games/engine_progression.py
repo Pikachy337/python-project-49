@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
 from random import randint
 from brain_games.scripts.games.welcome_user import get_user_name
-
-user_answer = ''
-correct_answer = ''
-counter_for_mistakes = 0
-counter_for_correct_answer = 0
+from brain_games.scripts.games.check_answer import check_answer
 
 
 def progression_back():
-    global correct_answer
     # Form a numbers
     result = []
     start_progression = randint(1, 100)
@@ -24,45 +19,34 @@ def progression_back():
     correct_answer = result.pop(del_elem)
     result.insert(del_elem, '..')
 
-    return result
+    return result, correct_answer
 
 
 def progression_front():
-    # Create 2 counters
-    global counter_for_mistakes
-    global counter_for_correct_answer
-    global user_answer
+    user_name = get_user_name()
+    # redefine variables for repeated game
+    counter_for_mistakes = 0
+    counter_for_correct_answer = 0
+
     print('What number is missing in the progression?')
 
-    while counter_for_mistakes != 3 and counter_for_correct_answer != 3:
+    while counter_for_mistakes < 3 and counter_for_correct_answer < 3:
         # Get 2 files from back
-        question = progression_back()
+        question, correct_answer = progression_back()
 
         # User contact
         print('Question: ', end='')
         print(*question)
-        print('Your answer: ', end='')
-        user_answer = input()
+        user_answer = input('Your answer: ')
 
         # check answer using module
-        check_answer()
+        (counter_for_correct_answer,
+         counter_for_mistakes) = check_answer(user_answer, correct_answer,
+                                              counter_for_correct_answer,
+                                              counter_for_mistakes)
 
-
-def check_answer():
-    global counter_for_correct_answer, counter_for_mistakes
-    user_name = get_user_name()  # get user_name
-
-    if user_answer == str(correct_answer):
-        counter_for_correct_answer += 1
-        print('Correct')
-    else:
-        counter_for_mistakes += 1
-        print(f'{user_answer} is wrong answer ;(.'
-              f'Correct answer was {correct_answer}.',
-              f"Let's try again, {user_name}", sep='\n')
-
-    if counter_for_correct_answer == 3:
-        print(f'Congratulations, {user_name}')
+        if counter_for_correct_answer == 3:
+            print(f'Congratulations, {user_name}')
 
 
 if __name__ == '__main__':

@@ -5,8 +5,7 @@ def welcome_user():
     global user_name
     if user_name is None:
         print('Welcome to the Brain Games!')
-        print('May I have your name?: ', end='')
-        user_name = input()
+        user_name = input('May I have your name?: ')
         print(f'Hello, {user_name}!')
     return user_name
 
