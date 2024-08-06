@@ -20,26 +20,21 @@ def main():
     while counter != 15:
         print(*lst_game, sep='\n')
         game_number = input('Enter the game: ')
-        if game_number == '1':
-            bev()
+        game_actions = {
+            '1': bev,
+            '2': bcalc,
+            '3': bgcd,
+            '4': bprogr,
+            '5': bprime
+        }
+        # check value game_number
+        if game_number in game_actions:
+            game_actions[game_number]()
             counter += 1
-        elif game_number == '2':
-            bcalc()
-            counter += 1
-        elif game_number == '3':
-            bgcd()
-            counter += 1
-        elif game_number == '4':
-            bprogr()
-            counter += 1
-        elif game_number == '5':
-            bprime()
-            counter += 1
+
         elif game_number == '6':
             break
-        else:
-            print('Entered the wrong number',
-                  'Input number from 1 to 5.', sep='\n')
+
     # counter for rofls? Yes.
     if counter == 15:
         print('WOOOW! It seems you have been playing too much!',
