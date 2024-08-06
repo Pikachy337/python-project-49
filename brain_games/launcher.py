@@ -10,7 +10,7 @@ lst_game = ['1. Check for evenness.', '2. Calculator.',
             '5. Is it a prime number.', '6. Exit.']
 
 
-def start_mini_game():
+def main():
     # ceremony
     print('Hello, this is my project for Hexlet №1. ',
           'Created Dmitry Yarinsky. Edits made : 0',
@@ -48,4 +48,4 @@ def start_mini_game():
 
 
 if __name__ == '__main__':
-    start_mini_game()
+    main()
