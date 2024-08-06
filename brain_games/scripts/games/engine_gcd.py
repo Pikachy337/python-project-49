@@ -21,7 +21,7 @@ def gcd_front():
 
     print('Find the greatest common divisor of given numbers.')
 
-    while counter_for_mistakes < 3 and counter_for_correct_answer < 3:
+    while counter_for_mistakes != 1 and counter_for_correct_answer < 3:
         result, correct_answer = gcd_back()
         print(result)  # output question
         user_answer = input('Your answer: ')

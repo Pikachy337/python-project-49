@@ -38,7 +38,7 @@ def calc_front():
 
     print('What is the result of the expression?')
 
-    while counter_for_mistakes < 3 and counter_for_correct_answer < 3:
+    while counter_for_mistakes != 1 and counter_for_correct_answer < 3:
         result, correct_answer = calc_back()
         print(result)
         user_answer = input('Your answer: ')

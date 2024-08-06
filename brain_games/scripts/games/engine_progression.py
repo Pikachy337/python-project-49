@@ -30,7 +30,7 @@ def progression_front():
 
     print('What number is missing in the progression?')
 
-    while counter_for_mistakes < 3 and counter_for_correct_answer < 3:
+    while counter_for_mistakes != 1 and counter_for_correct_answer < 3:
         # Get 2 files from back
         question, correct_answer = progression_back()
 

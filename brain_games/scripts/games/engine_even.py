@@ -19,7 +19,7 @@ def even_front():
 
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    while counter_for_mistakes < 3 and counter_for_correct_answer < 3:
+    while counter_for_mistakes != 1 and counter_for_correct_answer < 3:
         result, correct_answer = even_back()  # take question
         print(result)  # output question
         user_answer = input('Your answer: ')
