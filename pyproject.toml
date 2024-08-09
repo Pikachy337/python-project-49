@@ -1,11 +1,21 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Dmitry Yarinsky"]
+description = "A collection of fun and challenging brain games designed to improve cognitive skills."
+authors = ["Dmitry Yarinsky <pikachyshkaa@gmail.com>"]
 packages = [
   { include = "brain_games" },
 ]
+
+classifiers = [
+    "Development Status :: 4 - Release",
+    "Intended Audience :: Education",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+
+repository = "https://github.com/Pikachy337/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.10"
