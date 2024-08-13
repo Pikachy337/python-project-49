@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games.scripts.games.welcome_user import get_user_name
-from brain_games.scripts.games.check_answer import check_answer
+from brain_games.games.welcome_user import get_user_name
+from brain_games.games.check_answer import check_answer
 
 
 def calc_back():

@@ -1,5 +1,5 @@
-from brain_games.scripts.games.welcome_user import welcome_user
-from brain_games.scripts.games.engine_progression import progression_front
+from brain_games.games.welcome_user import welcome_user
+from brain_games.games.engine_progression import progression_front
 
 
 def main():

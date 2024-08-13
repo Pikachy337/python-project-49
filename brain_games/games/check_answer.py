@@ -1,4 +1,4 @@
-from brain_games.scripts.games.welcome_user import get_user_name
+from brain_games.games.welcome_user import get_user_name
 
 
 def check_answer(user_answer, correct_answer,
