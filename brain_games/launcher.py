@@ -14,7 +14,7 @@ lst_game = ['1. Check for evenness.', '2. Calculator.',
 def main():
     # ceremony
     print('Hello, this is my project for Hexlet №1. ',
-          'Created Dmitry Yarinsky. Edits made : 1',
+          'Created Dmitry Yarinsky. Edits made : 2+',
           'Select the game you are interested in:', sep='\n')
     # choice the game
     counter = 0

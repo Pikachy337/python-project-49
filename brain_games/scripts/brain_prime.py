@@ -1,10 +1,9 @@
-from brain_games.games.welcome_user import welcome_user
-from brain_games.games.engine_prime import prime_front
+from brain_games.engine import game_run
+from brain_games.games import prime
 
 
 def main():
-    welcome_user()
-    prime_front()
+    game_run(prime)
 
 
 if __name__ == '__main__':

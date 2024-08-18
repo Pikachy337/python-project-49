@@ -1,10 +1,9 @@
-from brain_games.games.welcome_user import welcome_user
-from brain_games.games.engine_calc import calc_front
+from brain_games.engine import game_run
+from brain_games.games import calc
 
 
 def main():
-    welcome_user()
-    calc_front()
+    game_run(calc)
 
 
 if __name__ == '__main__':
