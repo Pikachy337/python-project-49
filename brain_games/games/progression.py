@@ -18,5 +18,5 @@ def run_game():
     del_elem = randint(0, len(question) - 1)
     correct_answer = question.pop(del_elem)
     question.insert(del_elem, '..')
-
+    question = ' '.join(map(str, question))
     return question, str(correct_answer)
