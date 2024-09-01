@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
 import sys
 
 
 def exit_game():
+    """Exits the game in the launcher."""
     print('Are you sure you want to exit?',
           '1.Yes 2.No', sep='\n')
     question = input('Enter the number: ')

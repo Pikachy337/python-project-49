@@ -25,8 +25,19 @@
    brain-game
 
 ## Example of the games:
-- [Brain Even](https://asciinema.org/a/t7Ntt16tvnh7QL8KK6nhmHpCf)  
-- [Brain Calculator](https://asciinema.org/a/05ZWHredFItSnnDOQpz50s8Fy)  
-- [Brain Greatest common divisor](https://asciinema.org/a/9gF73g2DDQQYqVKk50LUtd9iK)  
-- [Brain Progression](https://asciinema.org/a/UnFBs9uQ70fzIdnnp9DIGb7Eg)  
-- [Brain Is Prime](https://asciinema.org/a/lOkk0DA6mRzp76z4YXljonWRM)
+- 🎮 Brain Even:
+
+<a href="https://asciinema.org/a/t7Ntt16tvnh7QL8KK6nhmHpCf" target="_blank"> <img src="https://asciinema.org/a/t7Ntt16tvnh7QL8KK6nhmHpCf.svg" style="width: 50%;" /> </a>
+
+- 🎮 Brain Calculator:
+
+<a href="https://asciinema.org/a/05ZWHredFItSnnDOQpz50s8Fy" target="_blank"><img src="https://asciinema.org/a/05ZWHredFItSnnDOQpz50s8Fy.svg"  style="width: 50%;" /></a>
+- 🎮 Brain Greatest common divisor:
+
+<a href="https://asciinema.org/a/9gF73g2DDQQYqVKk50LUtd9iK" target="_blank"><img src="https://asciinema.org/a/9gF73g2DDQQYqVKk50LUtd9iK.svg" style="width: 50%;" /></a>
+- 🎮 Brain Progression
+
+<a href="https://asciinema.org/a/UnFBs9uQ70fzIdnnp9DIGb7Eg" target="_blank"><img src="https://asciinema.org/a/UnFBs9uQ70fzIdnnp9DIGb7Eg.svg" style="width: 50%;" /></a>
+- 🎮Brain Is Prime
+
+<a href="https://asciinema.org/a/lOkk0DA6mRzp76z4YXljonWRM" target="_blank"><img src="https://asciinema.org/a/lOkk0DA6mRzp76z4YXljonWRM.svg" style="width: 50%;" /></a>

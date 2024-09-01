@@ -4,7 +4,7 @@ from brain_games.scripts.brain_progression import main as bprogr
 from brain_games.scripts.brain_calc import main as bcalc
 from brain_games.scripts.brain_gcd import main as bgcd
 from brain_games.scripts.brain_prime import main as bprime
-from brain_games.games.exit_game import exit_game
+from brain_games.exit_game import exit_game
 
 lst_game = ['1. Check for evenness.', '2. Calculator.',
             '3. Greatest common divisor.', '4. Arithmetic progression.',
@@ -12,9 +12,12 @@ lst_game = ['1. Check for evenness.', '2. Calculator.',
 
 
 def main():
+    """Offers the player 5 games to choose from
+     and launches the selected one.
+     """
     # ceremony
     print('Hello, this is my project for Hexlet №1. ',
-          'Created Dmitry Yarinsky. Edits made : 2+',
+          'Created Dmitry Yarinsky. Edits made : 15',
           'Select the game you are interested in:', sep='\n')
     # choice the game
     counter = 0

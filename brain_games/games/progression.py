@@ -5,18 +5,27 @@ DESCRIPTION = 'What number is missing in the progression?'
 
 
 def run_game():
+    """Run the 'missing number in progression' game by
+    generating a sequence of numbers with one missing.
+    """
+    progr = progression()
+    # Adding a hidden element
+    del_elem = randint(0, len(progr) - 1)
+    correct_answer = progr.pop(del_elem)
+    progr.insert(del_elem, '..')
+    question = ' '.join(map(str, progr))
+    return question, correct_answer
+
+
+def progression():
+    """Generate an arithmetic progression."""
     # Form a numbers
-    question = []
+    progr = []
     start_progression = randint(1, 100)
     difference = randint(2, 15)
 
     # Create a progression
     for i in range(randint(5, 10)):
-        question.append(start_progression + i * difference)
+        progr.append(start_progression + i * difference)
 
-    # Adding a hidden element
-    del_elem = randint(0, len(question) - 1)
-    correct_answer = question.pop(del_elem)
-    question.insert(del_elem, '..')
-    question = ' '.join(map(str, question))
-    return question, str(correct_answer)
+    return progr
