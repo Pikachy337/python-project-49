@@ -8,7 +8,7 @@ def run_game():
     """Run the 'prime number' game by generating a
     random number and checking if it is prime.
     """
-    question = randint(1, 100)
+    question = randint(2, 997)
     counter = 0
 
     for i in range(2, question // 2 + 1):
