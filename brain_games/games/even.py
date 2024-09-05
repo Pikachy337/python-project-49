@@ -9,11 +9,14 @@ def run_game():
     random number and determining if it's even.
     """
     question = randint(0, 100)
-    correct_answer = is_even(question)
+    if is_even(question):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return question, correct_answer
 
 
 def is_even(question):
     """Determine if a given number is even."""
-    correct_answer = 'yes' if question % 2 == 0 else 'no'
+    correct_answer = question % 2 == 0
     return correct_answer

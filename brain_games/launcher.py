@@ -17,7 +17,7 @@ def main():
      """
     # ceremony
     print('Hello, this is my project for Hexlet №1. ',
-          'Created Dmitry Yarinsky. Edits made : 15',
+          'Created Dmitry Yarinsky. Edits made : 18',
           'Select the game you are interested in:', sep='\n')
     # choice the game
     counter = 0

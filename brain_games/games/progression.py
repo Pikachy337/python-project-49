@@ -8,7 +8,7 @@ def run_game():
     """Run the 'missing number in progression' game by
     generating a sequence of numbers with one missing.
     """
-    progr = progression()
+    progr = generate_sequence()
     # Adding a hidden element
     del_elem = randint(0, len(progr) - 1)
     correct_answer = progr.pop(del_elem)
@@ -17,7 +17,7 @@ def run_game():
     return question, correct_answer
 
 
-def progression():
+def generate_sequence():
     """Generate an arithmetic progression."""
     # Form a numbers
     progr = []
