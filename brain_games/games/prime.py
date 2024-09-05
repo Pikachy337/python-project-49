@@ -33,4 +33,3 @@ def is_prime(counter):
     else:
         correct_answer = False
     return correct_answer
-
