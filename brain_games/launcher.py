@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from brain_games.scripts.brain_even import main as bev
 from brain_games.scripts.brain_progression import main as bprogr
 from brain_games.scripts.brain_calc import main as bcalc

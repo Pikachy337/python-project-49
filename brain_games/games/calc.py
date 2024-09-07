@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from random import choice, randint
 
 DESCRIPTION = 'What is the result of the expression?'

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from random import randint
 
 DESCRIPTION = 'What number is missing in the progression?'

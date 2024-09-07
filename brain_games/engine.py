@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import prompt
 
 MAX_SCORE = 3
